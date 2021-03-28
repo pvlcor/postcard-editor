@@ -1,28 +1,61 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="root">
+    <div class="header">
+      <div class="title">Awesome Postcard Editor</div>
+    </div>
+    <div class="body">
+      <PostcardEditForm />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import PostcardEditForm from './components/PostcardEditForm.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld,
+    PostcardEditForm,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header {
+    vertical-align: middle;
+    height: 64px;
+    line-height: 64px;
+    background-color: cornflowerblue;
+    box-shadow: 0 0 8px 0px rgb(0 0 0 / 75%);
+  }
+
+  .title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-left: 16px;
+  }
+
+  .body {
+    background-color: #fefefe;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>

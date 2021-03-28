@@ -2,23 +2,34 @@
 
 ## Project setup
 ```
-npm install
+npm i
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm start
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Feature list
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Setup (2 hrs)
+ - setup env
+ - choose tech solution
+
+2. MVP (4 hrs)
+ - Layout
+ - Upload an image
+ - Add text overlay via button
+
+3. Version 1 (5 hrs)
+ - Zoom in / Zoom out
+ - Rotate portrait / landscape
+
+4. Version 2 (3 hrs)
+ - Undo / Redo
+ - Save edited image
