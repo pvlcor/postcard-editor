@@ -224,8 +224,6 @@ export default {
             this.ctx.fillStyle = 'white';
             this.ctx.fillText(
               text,
-              // (textCoords.x + padding),
-              // (textCoords.y + padding + fontSize),
               (w / 2) - (this.ctx.measureText(text).width / 2),
               textCoords.y + padding + fontSize,
             );
